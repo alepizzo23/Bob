@@ -35,6 +35,7 @@
     font-size: 1.3rem; letter-spacing: .02em; opacity: .9;
     animation: pulse 1.6s ease-in-out infinite;
   }
+  .hint small { display: block; font-size: .85rem; opacity: .7; margin-top: 6px; }
   .opened .hint { opacity: 0; animation: none; transition: opacity .3s; }
 
   /* ---------- Caja ---------- */
@@ -124,11 +125,11 @@
 <body>
 
 <div class="stage" id="stage">
-  <p class="hint">Toca el regalo 🎁</p>
+  <p class="hint">Para mi Margarida hermosa ❤️<small>toca el regalo 🎁</small></p>
 
   <div class="ticket" aria-hidden="true">
     <div class="main">
-      <div class="label">Admite 2 · Concierto</div>
+      <div class="label">Admite 1 · Concierto</div>
       <div class="artist" id="artist"></div>
       <div class="row">
         <div><div class="label">Fecha</div><div class="value" id="date"></div></div>
@@ -156,7 +157,7 @@
     date:    "04 Nov 2026",
     time:    "20:00",
     venue:   "AFAS Live",
-    message: "¡Nos vamos al concierto! ❤️<br>Te quiero mucho"
+    message: "¡Vas al concierto, mi amor! ❤️"
   };
 
   document.getElementById("artist").textContent = GIFT.artist;
